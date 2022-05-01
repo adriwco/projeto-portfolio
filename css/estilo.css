@@ -1,11 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
+  margin: 0rem;
   background: #f7f7f7;
   display: grid;
-  gap: 60px;
+  gap: 3.75rem;
   justify-items: center;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 img {
@@ -20,95 +20,158 @@ a {
 h1,
 h2,
 h3 {
-  margin: 0px;
+  margin: 0rem;
   font-weight: bold;
 }
-p {
-  margin: 0px;
-  font-size: 20px;
+h1{
+  font-size: 2rem;
+}
+h2{
+  line-height: 1.2;
+}
+p{
+  margin: 0rem;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
+header img{
+  margin: 0 auto 5rem auto;
+}
 .menu {
+  margin: 1.5rem 0rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
 }
 
 .menu a {
   background: #ffffff;
-  padding: 15px 30px;
-  border-radius: 4px;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
   color: #000000;
   text-transform: uppercase;
+  border: 0.13rem solid #fff;
 }
 .menu a:hover{
-  background: #dddcdc;
-  transition: 1s;
+  border-color: #e21;
 }
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 1000px;
+  max-width: 62rem;
 }
-
 .introducao {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: right;
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 1.25rem;
   align-content: center;
   justify-items: end;
 }
-
-.detalhe {
-  width: 60px;
-  height: 4px;
-  background: #e21;
+.introducao::before{
+  content: "";
   position: absolute;
-  top: 30px;
-  right: -30px;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #e21; 
+  top: 1.87rem;
+  right: -1.87rem;
 }
-
+.introducao-cover img{
+  object-fit: cover;
+  height: 100%;
+}
 .botao {
   background: #e21;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
   text-transform: uppercase;
 }
-
+.botao:hover{
+  background: #900;
+}
 .subtitulo {
-  font-size: 64px;
+  font-size:  4rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   align-self: center;
+  background-image: url("https://adriwco.github.io/exercicio-posicionamento/img/onda.svg");
+  /*word-break: break-all;*/
 }
 
 .vantagens {
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .vantagens-item {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px 20px;
-  padding: 20px;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+  border-left: 0.25rem solid transparent;
 }
-
+.vantagens-item:nth-child(odd){
+  background: #f7f7f7;
+}
 .vantagens-item p {
   grid-column: 2;
 }
-
+.vantagens-item:hover{
+  border-color: #e21;
+}
 .rodape {
   background: #fff;
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 2.5rem;
   box-sizing: border-box;
+}
+@media (max-width: 1000px){
+  body {
+    margin-top: 2rem;
+  }
+  header img{
+    margin: 0 auto 3rem auto;
+  }
+  .conteudo {
+    grid-template-columns:1fr;
+  }
+  .menu {
+    margin: 0rem;
+  }
+  .menu a {
+    padding: 1rem 1rem;
+    display: flex;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before{
+    top: 1.60rem;
+    right: 42%;
+  }
+  .subtitulo{
+    text-align: center;
+    padding: 2.5rem 0rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 425px){
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu a {
+    display: grid;
+    place-items: center;
+  }
 }
