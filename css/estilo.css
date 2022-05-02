@@ -165,7 +165,7 @@ header img{
     font-size: 3rem;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 500px){
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
