@@ -5,61 +5,143 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercicio de Posicionamento</title>
-  <link rel="stylesheet" href="https://adriwco.github.io/exercicio-posicionamento/css/reset.css">
-  <link rel="stylesheet" href="https://adriwco.github.io/exercicio-posicionamento/css/estilo.css">
+  <meta name="description" content="Desenvolvimento Front End & UX/UI Designer. Localizado em Fortaleza - Ceará.">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
 <body>
-  <header>
-    <img src="https://adriwco.github.io/exercicio-posicionamento/img/bikcraft.svg" alt="Bikcraft">
-    <nav aria-label="primária">
-      <ul class="menu">
-        <li><a href="/">Sobre</a></li>
-        <li><a href="/">Produtos</a></li>
-        <li><a href="/">Lojas</a></li>
-        <li><a href="/">Contato</a></li>
+  <header class="header">
+    <img src="./img/marca.svg" alt="marca" width="104" height="38">
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
-
-  <main>
-    <article class="conteudo" aria-labelledby="label-introducao">
-      <div class="introducao" id="label-introducao">
-        <h1>Bicicletas Feitas a Mão</h1>
-        <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
-        <a class="botao" href="/">Ver Mais</a>
-      </div>
-      <div class="introducao-cover">
-        <img src="https://adriwco.github.io/exercicio-posicionamento/img/bicicleta.jpg" alt="Bicicleta Bikcraft Preta">
-      </div>
-    </article>
-
-    <article class="conteudo" aria-labelledby="label-vantagens">
-      <h2 class="subtitulo" id="label-vantagens">Vantagens Bikcraft</h2>
-      <ul class="vantagens">
-        <li class="vantagens-item">
-          <img src="https://adriwco.github.io/exercicio-posicionamento/img/eletrica.svg" alt="">
-          <h3>Motor Elétrico</h3>
-          <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-        </li>
-        <li class="vantagens-item">
-          <img src="https://adriwco.github.io/exercicio-posicionamento/img/velocidade.svg" alt="">
-          <h3>40 km/h</h3>
-          <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
-        </li>
-        <li class="vantagens-item">
-          <img src="https://adriwco.github.io/exercicio-posicionamento/img/rastreador.svg" alt="">
-          <h3>Rastreador</h3>
-          <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
-        </li>
-      </ul>
-    </article>
+  <main class="introducao">
+    <img src="./img/perfil.jpg" alt="Lobo Cinza" width="360" height="520">
+    <div>
+      <h1>Desenvolvimento<br>Front End &<br>UX/UI Designer</h1>
+      <p>Localizado em Fortaleza - Ceará&#129680;</p>
+    </div>
   </main>
+  <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
 
-  <footer class="rodape">
-    <p>&copy Adriano Weverton Cruz Oliveira <br> <a href="https://www.origamid.com/">Student of Origamid</a></p>
+      <div class="empresa">
+        <span class="empresa-ano">2022</span>
+        <h3 class="empresa-titulo">Bikcraft</h3>
+        <span class="empresa-titulo">Desenvolvedor Júnior</span>
+        <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do HTML, CSS e JavaScript do site. Além disso, também prestei consultoria no Design.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <span class="empresa-ano">2022</span>
+        <h3 class="empresa-titulo">Surfbot</h3>
+        <span class="empresa-titulo">Estagiário</span>
+        <p class="empresa-texto">Surfbot é a empresa que oferece aulas de surf no Rio de Janeiro. O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi feito do zero.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="empresa">
+        <span class="empresa-ano">2022</span>
+        <h3 class="empresa-titulo">Brafé</h3>
+        <span class="empresa-titulo">Voluntário</span>
+        <p class="empresa-texto">Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu trabalhei na criação do email marketing e codificação do site.</p>
+        <ul class="empresa-habilidades">
+          <li>Email Marketing</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Formação</h2>
+      <div>
+        <p class="formacao-texto">
+          Estudante de <strong>Sistema da Informação</strong> (bacharelado - 3º periodo) | Curso completo de técnico de informática | Realizando o "curso livre" de <strong>HTML5</strong> e <strong>CSS3</strong> para iniciantes, além de <strong>UX</strong> e <strong>UI</strong> básico | Futuramente a iniciar os estudos sobre <strong>JS ES6</strong>.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharel</span>
+            <h3 class="faculdade-curso">Sistema da Informação</h3>
+            <span class="faculdade-instituicao">DFD (EaD)</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnólogo</span>
+            <h3 class="faculdade-curso">Técnico de Informática</h3>
+            <span class="faculdade-instituicao">EEEP JMF</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">Secundário</span>
+            <h3 class="faculdade-curso">User Experience Design</h3>
+            <span class="faculdade-instituicao">EEEP JMF</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <!--<li>UX Design & UI Design <span>56h</span></li>-->
+              <li>Front End para Iniciantes <span>72h</span></li>
+              <li>Noções de Web Design <span>44h</span></li>
+            </ul>
+          </div>
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Básico</span></li>
+              <li>Espanhol <span>/ Básico</span></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa!🤝</p>
+      <ul class="footer-contato">
+        <li><a class="email" href="mailto:adriwco@gmail.com">adriwco@gmail.com</a></li>
+        <li><a href="tel:+5585986436235">+55 (85) 98643-6235</a></li>
+        <li><a href="tel:+35162655782">+351 962 655 782</a></li>
+      </ul>
+      <ul class="footer-contato redes-s">
+        <li><a href="/">@instagram</a></li>
+        <li><a href="/">@linkedin</a></li>
+        <li><a href="/">@github</a></li>
+      </ul>
+      <p class="footer-copy">&copy; Lobo, Alguns direitos reservados</p>
+    </div>
   </footer>
+
 </body>
 
 </html>
