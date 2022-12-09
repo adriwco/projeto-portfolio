@@ -73,6 +73,9 @@
   position: absolute;
   left: -24px;
 }
+.faculdade-curso:hover::before{
+  background: linear-gradient(#aa98a8,#980bb4);
+}
 .faculdade-instituicao{
   font-size: 1.125rem;
   color: #a3a3a3;
@@ -114,6 +117,18 @@
 .cursos li{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.cursos a{
+  color: #fff;
+}
+.cursos a:hover{
+  color: #67dd0a;
+}
+.cursos a:hover::before{
+  content: '→';
+  display: inline-block;
+  width: 30px;
 }
 @media (max-width: 800px){
   .formacao-container{
