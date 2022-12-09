@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;

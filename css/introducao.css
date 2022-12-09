@@ -7,6 +7,10 @@
   gap: 100px;
   align-items: center;
 }
+.introducao img{
+  border-radius: 5%;
+  transition: 1s;
+}
 .introducao h1{
   font-size: 4.5rem;
   line-height: 1.125;

@@ -27,6 +27,7 @@
   background: #f5f5f5;
   margin-bottom: 20px;
   position: relative;
+  transition: 1s;
 }
 .empresa::before{
   content: "";
@@ -37,6 +38,9 @@
   position: absolute;
   top: 20px;
   left: -4px;
+}
+.empresa:hover::before{
+  background: linear-gradient(#aa98a8,#980bb4);
 }
 .empresa-ano{
   position: absolute;
@@ -70,6 +74,22 @@
   background: #fff;
   padding: 5px 10px;
 }
+.scroll-projetos{
+  height: 500px;
+  overflow-y: scroll;
+  padding-left: 50px;
+}
+.scroll-projetos::-webkit-scrollbar{
+  width: 15px;
+}
+.scroll-projetos::-webkit-scrollbar-thumb{
+  background-color: #67dd0a;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+}
+.scroll-projetos::-webkit-scrollbar-track{
+  background-color: #faf6ed;
+}
 @media (max-width: 800px){
   .experiencia{
     grid-template-columns: 1fr;
@@ -89,6 +109,9 @@
   }
   .empresa-ano::before{
     content: "Ano: ";
+  }
+  .scroll-projetos{
+    padding-left: 0px;
   }
 }
 @media (max-width: 400px){

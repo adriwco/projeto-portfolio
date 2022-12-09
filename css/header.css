@@ -20,6 +20,11 @@
   display: block;
   background: #f5f5f5;
   border-radius: .3rem;
+  filter: drop-shadow(2px 2px 1px rgb(138, 217, 19));
+  transition: 1s;
+}
+.header-menu a:hover{
+  filter: drop-shadow(2px 2px 1px rgb(151, 12, 179));
 }
 @media (max-width: 800px) {
   .header{
