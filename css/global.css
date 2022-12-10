@@ -30,6 +30,10 @@ img{
 }
 
 @media (max-width: 800px){
+  
+img[src^='./img/marcaA']{
+  margin-top: 30px;
+}
   .subtitulo{
     font-size: 3rem;
     text-transform: capitalize;
