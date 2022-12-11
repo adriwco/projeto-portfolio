@@ -24,6 +24,7 @@
   transition: 1s;
 }
 .header-menu a:hover{
+  color: rgb(151, 12, 179);
   filter: drop-shadow(2px 2px 1px rgb(151, 12, 179));
 }
 @media (max-width: 800px) {

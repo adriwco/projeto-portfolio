@@ -21,6 +21,9 @@ img{
   height: auto;
   display: block;
 }
+strong:hover{
+  color: #67dd0a !important;
+}
 .subtitulo{
   font-size: 8rem;
   line-height: 1;
