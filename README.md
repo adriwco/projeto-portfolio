@@ -1,5 +1,5 @@
 ## projeto-portfolio 
-🔸Simples Portfolio / HTML e CSS / Ainda modificarei muito (estado de aprimoramento).
+🔸Ainda modificarei muito! (estado de aprimoramento).
 ***
 #### 🔸Tecnologias utilizadas:
 
@@ -11,7 +11,7 @@
 
 ***
 #### 🔸Pré-visualização (screenshot):
-[![projeto-portfolio](https://user-images.githubusercontent.com/80191040/185259329-99def274-a06a-40c3-8f63-ad39ffad91b7.png)](https://adriwco.github.io/projeto-portfolio)
+[![projeto-portfolio](https://user-images.githubusercontent.com/80191040/206906253-507d8cac-d1b0-4909-a60c-30b1be54a010.png)](https://adriwco.github.io/projeto-portfolio)
 
 ***
 ### <p align="center">🔸[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)🔸</p>
