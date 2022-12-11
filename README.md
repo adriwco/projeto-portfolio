@@ -1,5 +1,5 @@
 ## projeto-portfolio 
-🔸Simples Portfolio / HTML e CSS / Ainda modificarei muito (estado de aprimoramento).
+🔸Ainda modificarei muito! (estado de aprimoramento).
 ***
 #### 🔸Tecnologias utilizadas:
 
