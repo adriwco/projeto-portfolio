@@ -9,30 +9,35 @@
   <title>Portfólio</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
   <header class="header">
-    <img src="./img/marcaA.svg" alt="marca" width="150" height="38">
+    <img src="./img/marcaA.svg" class="fadeInDown" data-anime="200" alt="marca" width="150" height="38">
     <nav>
       <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li class="fadeInDown" data-anime="400"><a href="#experiencia">Experiência</a></li>
+        <li class="fadeInDown" data-anime="500"><a href="#formacao">Formação</a></li>
+        <li class="fadeInDown" data-anime="600"><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
   <main class="introducao">
-    <img src="./img/zyro-imageB.png" alt="Lobo Cinza" width="360" height="520">
+    <img src="./img/zyro-imageB.png" class="fadeInLeft" data-anime="800" alt="Lobo Cinza" width="360" height="520">
     <div>
-      <h1>Desenvolvimento<br>Front End &<br>UX/UI Designer</h1>
-      <p>Localizado em Fortaleza - Ceará&#129680;</p>
+      <h1>
+        <div class="fadeInLeft" data-anime="900">Desenvolvimento</div>
+        <div class="fadeInRight" data-anime="1000">Front End &</div>
+        <div class="fadeInLeft" data-anime="1100">UX/UI Designer</div>
+      </h1>
+      <p class="fadeInRight" data-anime="1200">Localizado em Fortaleza - Ceará &#129680;</p>
     </div>
   </main>
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
+  <section class="experiencia fadeInDown" data-anime="1400" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, além de aplicar noções sobre <strong>UX</strong> e <strong>UI</strong> design nos projetos.</p>
+      <p class="experiencia-texto">Desenvolvo projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, além de aplicar noções sobre <strong>UX</strong> e <strong>UI</strong> design nos projetos.</p>
 
       <div class="scroll-projetos">
         <div class="empresa">
@@ -226,6 +231,8 @@
     </div>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js" ></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
