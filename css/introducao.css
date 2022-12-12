@@ -32,7 +32,18 @@
   font-size: 1.5rem;
   color: #525252;
 }
-
+.localizacaoPlaneta{
+  position: relative;
+}
+@keyframes seta {
+  from{
+    transform: translateY(-30%);
+  }
+}
+.emotePlaneta{
+  position: absolute;
+  animation: seta .5s ease-in 0s infinite alternate;
+}
 @media (max-width: 1000px){
   .introducao h1{
     font-size: 3rem;

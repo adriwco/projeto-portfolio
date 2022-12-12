@@ -1,4 +1,4 @@
-//Animañao plugins - Origamid
+// Animação plugins - @origamid
   if(window.SimpleAnime){
     new SimpleAnime();
   }
