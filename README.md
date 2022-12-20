@@ -12,7 +12,7 @@
 
 ***
 #### 🔸Pré-visualização (screenshot):
-[![projeto-portfolio](https://user-images.githubusercontent.com/80191040/206906253-507d8cac-d1b0-4909-a60c-30b1be54a010.png)](https://adriwco.github.io/projeto-portfolio)
+[![projeto-portfolio](https://user-images.githubusercontent.com/80191040/208557511-21e75c32-6763-4f87-a12e-88252c348145.png)](https://adriwco.github.io/projeto-portfolio)
 
 ***
 ### <p align="center">🔸[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)🔸</p>
