@@ -13,16 +13,6 @@
   gap: 100px;
   position: relative;
 }
-.formacao-container::after{
-  content: '';
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url('../img/detalhe.svg') no-repeat center;
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
-}
 .formacao .subtitulo{
   color: #000;
   max-width: 5ch;

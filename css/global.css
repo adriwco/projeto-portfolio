@@ -1,30 +1,30 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   font-family: "Fira Sans", Arial, sans-serif;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-strong:hover{
+strong:hover {
   color: #67dd0a !important;
 }
-.subtitulo{
+.subtitulo {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -32,15 +32,39 @@ strong:hover{
   max-width: 4ch;
 }
 
-@media (max-width: 800px){
-  
-img[src^='./img/marcaA']{
-  margin-top: 30px;
-}
-  .subtitulo{
+@media (max-width: 800px) {
+  img[src^="./img/marcaA"] {
+    margin-top: 30px;
+  }
+  .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
   }
+}
 
+.footer,
+.experiencia {
+  overflow: hidden;
+}
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+.js .js-scroll.tipo2 {
+  transform: translate3d(0, 30px, 0);
+}
+.js .js-scroll.tipo3 {
+  transform: translate3d(30px, 0, 0);
+}
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+@media (max-width: 600px) {
+  .js .footer-informacoes.js-scroll.tipo3 {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
