@@ -1,4 +1,4 @@
-.introducao{
+.introducao {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -7,74 +7,74 @@
   gap: 100px;
   align-items: center;
 }
-.introducao img{
+.introducao img {
   border-radius: 5%;
   transition: 1s;
 }
-.introducao h1{
+.introducao h1 {
   font-size: 4.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
 }
-.introducao h1::before{
+.introducao h1::before {
   content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/detalhe.svg') no-repeat center;
+  background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
   top: -15px;
   left: -40px;
   z-index: -1;
 }
-.introducao p{
+.introducao p {
   font-size: 1.5rem;
   color: #525252;
   padding-right: 20px;
 }
-.localizacaoPlaneta{
+.localizacaoPlaneta {
   position: relative;
 }
 @keyframes seta {
-  from{
+  from {
     transform: translateY(-30%);
   }
 }
-.emotePlaneta{
+.emotePlaneta {
   position: absolute;
-  animation: seta .5s ease-in 0s infinite alternate;
+  animation: seta 0.5s ease-in 0s infinite alternate;
 }
-@media (max-width: 1000px){
-  .introducao h1{
+@media (max-width: 1000px) {
+  .introducao h1 {
     font-size: 3rem;
   }
 }
-@media (max-width: 800px){
-  .introducao{
+@media (max-width: 800px) {
+  .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-  .introducao h1{
+  .introducao h1 {
     font-size: 2rem;
-  }  
-  .introducao h1::before{
+  }
+  .introducao h1::before {
     width: 30px;
     height: 10px;
     left: 0px;
   }
 }
-@media (max-width: 500px){
-  .introducao{
+@media (max-width: 500px) {
+  .introducao {
     grid-template-columns: 1fr;
   }
-  .introducao img{
+  .introducao img {
     display: none;
   }
 }
 
 /*---------- animação de slide ----------*/
-.slide-container{
+.slide-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
@@ -90,7 +90,7 @@
   animation: scroll 10s linear infinite;
   display: flex;
 }
-.slide-track:hover{
+.slide-track:hover {
   animation-play-state: paused;
 }
 .slide {
@@ -103,5 +103,11 @@
   }
   100% {
     transform: translateX(calc(-140px * 10));
+  }
+}
+
+@media (max-width: 500px) {
+  .slide-container {
+    padding: 20px 20px;
   }
 }
