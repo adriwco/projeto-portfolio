@@ -72,3 +72,36 @@
     display: none;
   }
 }
+
+/*---------- animação de slide ----------*/
+.slide-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+  border-radius: 20px;
+}
+.slide-track {
+  position: absolute;
+  animation: scroll 10s linear infinite;
+  display: flex;
+}
+.slide-track:hover{
+  animation-play-state: paused;
+}
+.slide {
+  height: 100px;
+  width: 140px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-140px * 10));
+  }
+}
