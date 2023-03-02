@@ -8,6 +8,7 @@
   background-color: var(--fundo-1);
 }
 .logo{
+  margin-top: 40px;
   width: 150px;
   height: 38px;
   background: var(--logo);
