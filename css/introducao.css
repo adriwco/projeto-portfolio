@@ -6,6 +6,8 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  background-color: var(--fundo-1);
+  color: var(--fonte-cor-1);
 }
 .introducao img {
   border-radius: 5%;
@@ -30,7 +32,7 @@
 }
 .introducao p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--fonte-cor-2);
   padding-right: 20px;
 }
 .localizacaoPlaneta {
@@ -78,6 +80,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
+  background-color: var(--fundo-1);
 }
 .slider {
   position: relative;

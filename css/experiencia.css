@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  background-color: var(--fundo-1);
+  color: var(--fonte-cor-1);
 }
 .experiencia .subtitulo{
   color: #e0e0e0;
@@ -14,17 +16,17 @@
   line-height: 1.33;
   max-width: 50ch;
   margin-bottom: 60px;
-  color: #525252;
+  color: var(--fonte-cor-2);
 }
 .experiencia-texto strong{
-  color: #141414;
+  color: var(--fonte-cor-3);
 }
 .empresa{
   display: grid;
   gap: 10px 20px;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
-  background: #f5f5f5;
+  background: var(--fundo-3);
   position: relative;
   transition: 1s;
 }
@@ -48,7 +50,7 @@
   position: absolute;
   top: 22px;
   left: -100px;
-  color: #525252;
+  color: var(--fonte-cor-2);
   font-size: 0.875rem;
   width: 80px;
   text-align: right;
@@ -61,7 +63,7 @@
 .empresa-texto{
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #525252;
+  color: var(--fonte-cor-2);
 }
 .empresa-habilidades{
   display: flex;
@@ -73,8 +75,9 @@
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
-  background: #fff;
+  background: var(--fundo-1);
   padding: 5px 10px;
+  color: var(--fonte-cor-1);
 }
 .empresa-links{
   display: flex;
@@ -85,7 +88,7 @@
   padding: 5px 15px;
   text-align: center;
   position: relative;
-  color: #525252;
+  color: var(--fonte-cor-2);
 }
 .empresa-links a:hover{
   color: #980bb4;
@@ -93,19 +96,19 @@
 .empresa-links a::before{
   display: block;
   content: '';
-  background: url('../img/link.svg') no-repeat center center;
-  width: 24px;
-  height: 24px;
+  background: var(--icone-link);
+  width: 15px;
+  height: 15px;
   position: absolute;
-  left: -6px;
-  top: 3px;
+  left: -3px;
+  top: 6px;
 }
 .scroll-projetos{
   height: 500px;
   overflow-y: scroll;
   padding-left: 50px;
-  border-top: 3px solid #efefef;
-  border-bottom: 3px solid #efefef;
+  border-top: 3px solid var(--fundo-4);
+  border-bottom: 3px solid var(--fundo-4);
   border-radius: 5px;
 }
 .scroll-projetos::-webkit-scrollbar{
@@ -113,11 +116,11 @@
 }
 .scroll-projetos::-webkit-scrollbar-thumb{
   background-color: #67dd0a;
-  border-left: 4px solid #f5f5f5;
-  border-right: 4px solid #f5f5f5;
+  border-left: 4px solid var(--fundo-3);
+  border-right: 4px solid var(--fundo-3);
 }
 .scroll-projetos::-webkit-scrollbar-track{
-  background-color: #f5f5f5;
+  background-color: var(--fundo-3);
 }
 /* Video de Fundo do h2 */
 .container-subtitulo{
@@ -145,9 +148,9 @@
   height: 91%;
   top: 0;
   left: 0;
-  background: #fff;
-  color: #000 !important;
-  mix-blend-mode: screen;
+  background: var(--fundo-1);
+  color: var(--fundo-0) !important;
+  mix-blend-mode: var(--mix-blend-mode);
 }
 .banner-b h2{
   background: #141414 !important;
