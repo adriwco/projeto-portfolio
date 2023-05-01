@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns:  minmax(120px, 1fr) minmax(200px, 2fr) 1fr;
   gap: 40px;
-  padding-top: 90px;
+  padding-top: 10px;
   padding-bottom: 45px;
   justify-content: space-between;
   justify-items: center;
