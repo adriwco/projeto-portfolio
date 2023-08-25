@@ -175,7 +175,3 @@ optimizedBubbleValues.forEach((array) => {
 
   containerBuble.appendChild(elemento);
 });
-
-console.log(bubbleValues)
-console.log(optimizedBubbleValues)
-console.log(containerBuble)

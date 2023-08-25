@@ -55,3 +55,9 @@
     bottom: var(--distance, 10rem);
   }
 }
+
+@media (max-width: 500px){
+  .all-bubbles{
+    display: none;
+  }
+}
