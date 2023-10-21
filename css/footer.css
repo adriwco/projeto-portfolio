@@ -105,6 +105,9 @@
   position: absolute;
   top: -45px;
 }
+.footer-copy a{
+  color: #67dd0a;
+}
 .link-github{
   position: relative;
   padding-right: 130px;
