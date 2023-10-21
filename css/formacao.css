@@ -122,6 +122,19 @@
   display: inline-block;
   width: 30px;
 }
+.cursando{
+  position: relative;
+}
+.cursando img{
+  position: absolute;
+  display: inline-block;
+  top: -5px;
+}
+@media (max-width: 370px){
+  .cursando img{
+    display: none;
+  }
+}
 @media (max-width: 800px){
   .formacao-container{
     grid-template-columns: 1fr;

@@ -105,6 +105,33 @@
   position: absolute;
   top: -45px;
 }
+.link-github{
+  position: relative;
+  padding-right: 130px;
+}
+.link-github img{
+  position: absolute;
+  margin-top: -1px;
+  display: inline-block;
+}
+.link-mit{
+  position: relative;
+  padding-right: 85px;
+}
+.link-mit img{
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+}
+@media (max-width: 425px){
+
+  .link-github{
+    padding-right: 0;
+  }
+  .link-github img{
+    display: none;
+  }
+}
 @media (max-width: 770px) {
   .footer h3 {
     text-align: center;

@@ -19,6 +19,9 @@
     0% 62.5%
   );
 }
+#cv h3{
+  color: transparent;
+}
 .cv-container{
   margin: 0 auto;
   width: 13em;
