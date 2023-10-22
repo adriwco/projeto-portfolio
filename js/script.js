@@ -987,6 +987,76 @@ function getMSFromProperty(property, selector) {
     msLabelPos = transDur.indexOf("ms"),
     sLabelPos = transDur.indexOf("s");
 
-  if (msLabelPos > -1) return transDur.substr(0, msLabelPos);
-  else if (sLabelPos > -1) return transDur.substr(0, sLabelPos) * 1e3;
+  if (msLabelPos > -1) {
+    return transDur.slice(0, msLabelPos);
+  } else if (sLabelPos > -1) {
+    return transDur.slice(0, sLabelPos) * 1e3;
+  }
 }
+
+function prefersColorScheme() {
+  const elementoHtml = document.querySelector("html");
+  let prefersColorScheme = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  const botaoDark = document.getElementById("toggle-dark");
+  botaoDark.checked = prefersColorScheme;
+  elementoHtml.setAttribute(
+    "data-theme",
+    prefersColorScheme ? "dark" : "light"
+  );
+
+  botaoDark.addEventListener("change", () => {
+    if (!botaoDark.checked) {
+      changeTheme("light");
+    } else {
+      changeTheme("dark");
+    }
+  });
+
+  const changeTheme = (theme) => {
+    const themeValues = {
+      light: {
+        "--fundo-0": "#000000",
+        "--fundo-1": "#ffffff",
+        "--fundo-2": "#141414",
+        "--fundo-3": "#f5f5f5",
+        "--fundo-4": "#efefef",
+        "--fonte-cor-1": "#141414",
+        "--fonte-cor-2": "#525252",
+        "--fonte-cor-3": "#141414",
+        "--icone-link": 'url("../img/link-preto.svg") no-repeat center center',
+        "--logo": 'url("../img/marcaA.svg") no-repeat center center',
+        "--mix-blend-mode": "screen",
+      },
+      dark: {
+        "--fundo-0": "#ffffff",
+        "--fundo-1": "#181a1b",
+        "--fundo-2": "#0f1011",
+        "--fundo-3": "#1e2021",
+        "--fundo-4": "#4d4d4d",
+        "--fonte-cor-1": "#cacaca",
+        "--fonte-cor-2": "#b4aea4",
+        "--fonte-cor-3": "#e8e6e3",
+        "--icone-link": 'url("../img/link-branco.svg") no-repeat center center',
+        "--logo": 'url("../img/marcaB.svg") no-repeat center center',
+        "--mix-blend-mode": "darken",
+      },
+    };
+
+    for (const prop in themeValues[theme]) {
+      document.documentElement.style.setProperty(
+        prop,
+        themeValues[theme][prop]
+      );
+    }
+  };
+}
+prefersColorScheme();
+
+// let theme = localStorage.getItem("data-theme");
+// localStorage.setItem("data-theme", "dark");
+/* Verifica se tem no localStorage seleção do dark theme
+if (localStorage.getItem("data-theme") == "dark") {
+  botaoDark.checked = true;
+}*/

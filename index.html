@@ -16,13 +16,18 @@
 <body>
   <header class="header" id="header">
     <div class="logo fadeInDown" data-anime="200"></div>
-    <nav>
-      <ul class="header-menu">
-        <li class="fadeInDown" data-anime="400"><a href="#experiencia">Experiência</a></li>
-        <li class="fadeInDown" data-anime="500"><a href="#formacao">Formação</a></li>
-        <li class="fadeInDown" data-anime="600"><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul class="header-menu">
+          <li class="fadeInDown" data-anime="400"><a href="#experiencia">Experiência</a></li>
+          <li class="fadeInDown" data-anime="500"><a href="#formacao">Formação</a></li>
+          <li class="fadeInDown" data-anime="600"><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="modo-tela">
+        <input type="checkbox" name="toggle-dark" id="toggle-dark">
+      </div>
+    </div>
   </header>
   <main class="introducao js-scroll">
     <img src="./img/zyro-imageB.webp" class="fadeInLeft" data-anime="800" alt="Lobo Cinza" width="360" height="520">
@@ -304,11 +309,11 @@
     </div>
     <div class="footer-copy">
       <div><a href="https://github.com/adriwco/projeto-portfolio" target="_blank">Portfólio</a> &copy; Todos os direitos reservados.</div>
-      <p>Adriano Weverton Cruz Oliveira | <a class="link-github" href="https://github.com/adriwco" target="_blank">GitHub <img href="https://github.com/adriwco" src="https://komarev.com/ghpvc/?username=adriwco&color=green" alt="Profile Views" /></a> | <a class="link-mit" href="https://github.com/adriwco/projeto-portfolio/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT"></a></p>
+      <div>Adriano Weverton Cruz Oliveira | <a class="link-github" href="https://github.com/adriwco" target="_blank">GitHub <img href="https://github.com/adriwco" src="https://komarev.com/ghpvc/?username=adriwco&color=green" alt="Profile Views" /></a> | <a class="link-mit" href="https://github.com/adriwco/projeto-portfolio/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT"></a></div>
     </div>
   </footer>
   <script src="./js/plugins/simple-anime.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

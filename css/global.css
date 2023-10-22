@@ -1,31 +1,32 @@
-:root{
+:root {
   --fundo-0: #000000;
-  --fundo-1: #FFFFFF;
+  --fundo-1: #ffffff;
   --fundo-2: #141414;
-  --fundo-3: #F5F5F5;
+  --fundo-3: #f5f5f5;
   --fundo-4: #efefef;
   --fonte-cor-1: #141414;
   --fonte-cor-2: #525252;
   --fonte-cor-3: #141414;
-  --icone-link: url('../img/link-preto.svg') no-repeat center center;
-  --logo: url('../img/marcaA.svg') no-repeat center center;
+  --icone-link: url("../img/link-preto.svg") no-repeat center center;
+  --logo: url("../img/marcaA.svg") no-repeat center center;
   --mix-blend-mode: screen;
 }
-@media (prefers-color-scheme: dark){
-  :root{
+@media (prefers-color-scheme: dark) {
+  :root {
     --fundo-0: #ffffff;
-    --fundo-1: #181A1B;
-    --fundo-2: #0F1011;
-    --fundo-3: #1E2021;
+    --fundo-1: #181a1b;
+    --fundo-2: #0f1011;
+    --fundo-3: #1e2021;
     --fundo-4: #4d4d4d;
     --fonte-cor-1: #cacaca;
-    --fonte-cor-2: #B4AEA4;
-    --fonte-cor-3: #E8E6E3;
-    --icone-link: url('../img/link-branco.svg') no-repeat center center;
-    --logo: url('../img/marcaB.svg') no-repeat center center;
+    --fonte-cor-2: #b4aea4;
+    --fonte-cor-3: #e8e6e3;
+    --icone-link: url("../img/link-branco.svg") no-repeat center center;
+    --logo: url("../img/marcaB.svg") no-repeat center center;
     --mix-blend-mode: darken;
   }
 }
+
 /*var(--fundo-1);*/
 * {
   margin: 0px;

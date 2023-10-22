@@ -87,7 +87,7 @@
   color: #67dd0a;
 }
 .footer-copy {
-  color: #9c9c9c;
+  color: #dddddd;
   grid-column: 1/-1;
   margin-top: 60px;
   text-align: center;
@@ -107,6 +107,9 @@
 }
 .footer-copy a{
   color: #67dd0a;
+}
+.footer-copy a:hover{
+  color: #6fff00;
 }
 .link-github{
   position: relative;
