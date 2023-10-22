@@ -33,6 +33,60 @@
   color: rgb(151, 12, 179);
   filter: drop-shadow(0px 4px 1px rgb(151, 12, 179));
 }
+
+.menu-geral{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 50px;
+  margin-right: 10px;
+}
+.modo-tela{
+  margin-top: 10px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.label {
+  background-color: #111;
+  border: 1px solid #67dd0a;
+  transition: 1s;
+  filter: drop-shadow(0px 2px 1px rgb(138, 217, 19));
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 15px;
+  width: 40px;
+  transform: scale(1.5);
+}
+.label:hover{
+  filter: drop-shadow(0px 2px 1px rgb(151, 12, 179));
+}
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
 @media (max-width: 800px) {
   .header{
     flex-direction: column;
@@ -44,6 +98,16 @@
   }
   .logo{
     margin-top: 40px;
+  }
+}
+@media (max-width: 450px){
+  .menu-geral{ 
+  grid-template-columns: 1fr;
+  margin-right: 0px;
+  }
+  .modo-tela{
+    justify-self: end;
+    margin-right: 10px;
   }
 }
 @media (max-width: 350px){

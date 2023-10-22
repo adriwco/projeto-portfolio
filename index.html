@@ -16,7 +16,7 @@
 <body>
   <header class="header" id="header">
     <div class="logo fadeInDown" data-anime="200"></div>
-    <div>
+    <div class="menu-geral">
       <nav>
         <ul class="header-menu">
           <li class="fadeInDown" data-anime="400"><a href="#experiencia">Experiência</a></li>
@@ -25,7 +25,12 @@
         </ul>
       </nav>
       <div class="modo-tela">
-        <input type="checkbox" name="toggle-dark" id="toggle-dark">
+        <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+        <label class="label" for="toggle-dark">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
       </div>
     </div>
   </header>
@@ -313,6 +318,7 @@
     </div>
   </footer>
   <script src="./js/plugins/simple-anime.js"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
   <script src="./js/script.min.js"></script>
 </body>
 

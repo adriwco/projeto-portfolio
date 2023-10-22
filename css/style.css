@@ -1,3 +1,4 @@
+/*cleancss -o css/style.min.css css/style.css --with-rebase*/
 @import './animacao.css';
 @import './global.css';
 @import './header.css';
