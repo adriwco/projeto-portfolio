@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvimento Front End & UX/UI Designer. Localizado em Fortaleza - Ceará.">
   <meta name="theme-color" content="#67dd0a" />
-  <title>Portfólio</title>
+  <title>Portfólio | @adriwco</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com">
+  <link rel="manifest" href="/manifest.json">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 
@@ -25,7 +27,7 @@
         </ul>
       </nav>
       <div class="modo-tela">
-        <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark">
+        <input type="checkbox" class="checkbox" name="toggle-dark" id="toggle-dark" aria-label="Ativar/Desativar Modo Escuro">
         <label class="label" for="toggle-dark">
           <i class="fas fa-moon"></i>
           <i class="fas fa-sun"></i>
@@ -78,8 +80,9 @@
 
     <div class="container-subtitulo js-scroll">
       <div class="banner">
-        <video autoplay muted loop>
-          <source src="./img/video.mp4" type="video/mp4">
+        <video autoplay muted loop preload="auto">
+          <source src="./img/video.webm" type="video/webm">
+          <source src="./img/video.ogv" type="video/ogg">
         </video>
         <h2 class="subtitulo alturaA">Experiência</h2>
       </div>
@@ -188,8 +191,9 @@
 
       <div class="container-subtitulo js-scroll">
         <div class="banner banner-b">
-          <video autoplay muted loop>
-            <source src="./img/video.mp4" type="video/mp4">
+          <video autoplay muted loop preload="auto">
+            <source src="./img/video.webm" type="video/webm">
+            <source src="./img/video.ogv" type="video/ogg">
           </video>
           <h2 class="subtitulo alturaA">Formação</h2>
         </div>
