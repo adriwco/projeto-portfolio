@@ -99,7 +99,6 @@
   }
   .logo{
     margin-top: 10px;
-    margin-bottom: 30px;
   }
   .menu-geral{
     margin-right: 20px !important;
@@ -108,7 +107,7 @@
 @media (max-width: 450px){
   .menu-geral{ 
   grid-template-columns: 1fr;
-  margin-right: 0px;
+  margin-right: 0px !important;
   padding-bottom: 20px;
   }
   .modo-tela{
