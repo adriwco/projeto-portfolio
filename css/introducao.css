@@ -75,7 +75,7 @@
   }
 }
 
-/*---------- animação de slide ----------*/
+/*---------- animação de slide ----------
 .slide-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -102,10 +102,10 @@
 }
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(calc(-140px * 10));
   }
   100% {
-    transform: translateX(calc(-140px * 10));
+    transform: translateX(0);
   }
 }
 
@@ -114,3 +114,142 @@
     padding: 20px 20px;
   }
 }
+*/
+/*---------- Infinite Scrolling Animation ----------*/
+
+.container-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+.scroll {
+  position: relative;
+  display: flex;
+  width: 700px;
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  ); /* Para compatibilidade com navegadores WebKit */
+}
+
+.scroll div,
+.scroll div:nth-child(2),
+.reverso div,
+.reverso div:nth-child(2) {
+  white-space: nowrap;
+  animation-duration: var(--t);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.scroll div {
+  animation-name: animate;
+  animation-delay: calc(var(--t) * -2);
+}
+.scroll div:nth-child(2) {
+  animation-name: animate2;
+  animation-delay: calc(var(--t) / -2);
+}
+.reverso div {
+  animation-name: animate-r;
+  animation-delay: calc(var(--t) * -2);
+}
+.reverso div:nth-child(2) {
+  animation-name: animate2-r;
+  animation-delay: calc(var(--t) / -2);
+}
+
+@keyframes animate {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+@keyframes animate2 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+@keyframes animate-r {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+@keyframes animate2-r {
+  0%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.scroll div span {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 10px 5px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: 0.5s;
+}
+.scroll div span:hover{
+  background-color: #4caf50;
+  cursor: pointer;
+}
+.adriwco{
+  background-color: #FF366F !important;
+  color: #fff;
+}
+
+
+
+
+/*
+CODIGO DO HTML SCROLL COM IMG
+
+  <section class="slide-container fadeInRight" data-anime="1400">
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-html.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-css.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-js.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-jquery.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-bootstrap.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-git.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-figma.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-vscode.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-discord.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-stackoverflow.svg" height="120" width="120" alt="" /></div>
+
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-html.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-css.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-js.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-jquery.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-bootstrap.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-git.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-figma.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-vscode.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-discord.svg" height="120" width="120" alt="" /></div>
+        <div class="slide"><img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/icones/tecnologia/icon-stackoverflow.svg" height="120" width="120" alt="" /></div>
+      </div>
+    </div>
+  </section>
+
+*/

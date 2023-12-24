@@ -8,3 +8,4 @@
 @import './bubble.css';
 @import './footer.css';
 @import './buttonDownload.css';
+/* cleancss -o css/style.min.css css/style.css --with-rebase */

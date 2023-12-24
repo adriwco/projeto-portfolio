@@ -14,7 +14,7 @@
 }
 .header-menu{
   display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -36,7 +36,7 @@
 
 .menu-geral{
   display: grid;
-  gap: 20px;
+  gap: 25px;
   grid-template-columns: 2fr 50px;
   margin-right: 10px;
 }

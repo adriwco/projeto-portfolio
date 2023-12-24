@@ -163,3 +163,13 @@ prefersColorScheme();
 if (localStorage.getItem("data-theme") == "dark") {
   botaoDark.checked = true;
 }*/
+
+
+function duplicateAndAppend() {
+  const primariaScrolls = document.querySelectorAll('.primaria-scroll');
+  primariaScrolls.forEach(function(primariaScroll) {
+    const clone = primariaScroll.cloneNode(true);
+    primariaScroll.parentNode.insertBefore(clone, primariaScroll.nextSibling);
+  });
+}
+duplicateAndAppend();
