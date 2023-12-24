@@ -90,11 +90,12 @@
 @media (max-width: 800px) {
   .header{
     flex-direction: column;
-    gap: 40px;
-    padding: 10px;
+    gap: 20px;
+    padding: 5px;
   }
   .header-menu a{
     padding: 10px 10px;
+    font-size: 1rem;
   }
   .logo{
     margin-top: 40px;

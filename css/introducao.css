@@ -56,6 +56,7 @@
   .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin: 25px 0;
   }
   .introducao h1 {
     font-size: 2rem;
@@ -72,6 +73,12 @@
   }
   .introducao img {
     display: none;
+  }
+  .introducao h1 {
+    font-size: 1.8rem;
+  }
+  .localizacaoPlaneta{
+    font-size: 1.4rem !important;
   }
 }
 
@@ -168,34 +175,34 @@
 }
 
 @keyframes animate {
-  0%{
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
 @keyframes animate2 {
-  0%{
+  0% {
     transform: translateX(0);
   }
-  100%{
+  100% {
     transform: translateX(-200%);
   }
 }
 @keyframes animate-r {
-  0%{
+  0% {
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(100%);
   }
 }
 @keyframes animate2-r {
-  0%{
+  0% {
     transform: translateX(-200%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
@@ -211,18 +218,18 @@
   border-radius: 5px;
   transform: 0.5s;
 }
-.scroll div span:hover{
+.scroll div span:hover {
   background-color: #4caf50;
   cursor: pointer;
 }
-.adriwco{
-  background-color: #FF366F !important;
+.adriwco {
+  background-color: #ff366f !important;
   color: #fff;
 }
 
-
-
-
+/*
+.teste > div:first-child
+.teste > div:last-child
 /*
 CODIGO DO HTML SCROLL COM IMG
 

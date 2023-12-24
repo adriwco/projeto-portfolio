@@ -357,9 +357,30 @@
       <div>Adriano Weverton | <a class="link-github" href="https://github.com/adriwco" target="_blank">GitHub <img href="https://github.com/adriwco" src="https://komarev.com/ghpvc/?username=adriwco&color=green" alt="Profile Views" /></a> | <a class="link-mit" href="https://github.com/adriwco/projeto-portfolio/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT"></a></div>
     </div>
   </footer>
+  <script>
+
+    let i = 0;
+    const contarAte3 = setInterval(callbackReload, 1000);
+    function callbackReload() {
+      console.log(i++);
+      if (!sessionStorage.getItem('recarregou')) {
+        if (i > 2) {
+          sessionStorage.setItem('recarregou', true);
+          location.reload();
+        }
+      } else {
+        clearInterval(contarAte3);
+        console.log('A página já foi recarregada uma vez.');
+      }
+    }
+    window.addEventListener('beforeunload', function () {
+      sessionStorage.setItem('recarregou', false);
+    });
+
+  </script>
   <script src="./js/plugins/simple-anime.js"></script>
   <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-  <script type="module" defer src="./js/script.min.js"></script>
+  <script type="module" src="./js/script.min.js"></script>
 </body>
 
 </html>
