@@ -98,17 +98,26 @@
     font-size: 1rem;
   }
   .logo{
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .menu-geral{
+    margin-right: 20px !important;
   }
 }
 @media (max-width: 450px){
   .menu-geral{ 
   grid-template-columns: 1fr;
   margin-right: 0px;
+  padding-bottom: 20px;
   }
   .modo-tela{
     justify-self: end;
     margin-right: 10px;
+  }
+  .header-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 350px){
