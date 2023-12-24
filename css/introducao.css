@@ -123,12 +123,14 @@
   align-items: center;
   flex-direction: column;
   margin: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .scroll {
   position: relative;
   display: flex;
-  width: 700px;
   overflow: hidden;
+  width: 100%;
   mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
   -webkit-mask: linear-gradient(
     90deg,
