@@ -18,6 +18,7 @@
   line-height: 1.125;
   margin-bottom: 30px;
   position: relative;
+  font-family: "Playfair Display SC", gergia;
 }
 .introducao h1::before {
   content: "";
