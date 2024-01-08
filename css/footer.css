@@ -60,6 +60,7 @@
 .footer-informacoes li {
   box-shadow: 0px 2px 1px var(--cor-segunda);
   display: flex;
+  border-radius: 15px;
 }
 .footer-informacoes li:hover {
   box-shadow: 0px 3px 1px var(--cor-primeira);
