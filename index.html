@@ -37,7 +37,7 @@
     </div>
   </header>
   <main class="introducao js-scroll">
-    <img src="./img/perfil/adriwco-webp.webp" class="fadeInLeft" data-anime="800" alt="Lobo Cinza" width="360" height="520">
+    <img src="https://raw.githubusercontent.com/adriwco/projeto-portfolio/main/img/perfil/adriwco-webp.webp" class="fadeInLeft" loading="lazy" data-anime="800" alt="Lobo Cinza" width="360" height="520">
     <div>
       <h1>
         <div class="fadeInLeft" data-anime="900">Desenvolvimento</div>
@@ -50,6 +50,36 @@
 
   <!-- https://www.youtube.com/watch?v=2l99ERCnB9c&ab_channel=OnlineTutorials -->
   <div class="container-scroll fadeInUp" data-anime="1300">
+    <div class="scroll" style="--t:50s">
+      <div class="primaria-scroll">
+        <span>html</span>
+        <span>css</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
+        <span>JQuery</span>
+        <span>Git</span>
+        <span>Bootstrap</span>
+        <span>VSCode</span>
+        <span>Markdown</span>
+        <span>GitLab</span>
+        <span>GitHub</span>
+      </div>
+    </div>
+    <div class="scroll reverso" style="--t:40s">
+      <div class="primaria-scroll">
+        <span class="adriwco">@adriwco</span>
+        <span>html</span>
+        <span>css</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
+        <span>JQuery</span>
+        <span>Git</span>
+        <span>Bootstrap</span>
+        <span>Markdown</span>
+        <span>GitLab</span>
+        <span>GitHub</span>
+      </div>
+    </div>
     <div class="scroll" style="--t:40s">
       <div class="primaria-scroll">
         <span>html</span>
@@ -65,37 +95,7 @@
         <span>GitHub</span>
       </div>
     </div>
-    <div class="scroll reverso" style="--t:30s">
-      <div class="primaria-scroll">
-        <span class="adriwco">@adriwco</span>
-        <span>html</span>
-        <span>css</span>
-        <span>JavaScript</span>
-        <span>Figma</span>
-        <span>JQuery</span>
-        <span>Git</span>
-        <span>Bootstrap</span>
-        <span>Markdown</span>
-        <span>GitLab</span>
-        <span>GitHub</span>
-      </div>
-    </div>
-    <div class="scroll" style="--t:30s">
-      <div class="primaria-scroll">
-        <span>html</span>
-        <span>css</span>
-        <span>JavaScript</span>
-        <span>Figma</span>
-        <span>JQuery</span>
-        <span>Git</span>
-        <span>Bootstrap</span>
-        <span>VSCode</span>
-        <span>Markdown</span>
-        <span>GitLab</span>
-        <span>GitHub</span>
-      </div>
-    </div>
-    <div class="scroll reverso" style="--t:35s">
+    <div class="scroll reverso" style="--t:45s">
       <div class="primaria-scroll">
         <span>html</span>
         <span>css</span>
@@ -354,30 +354,9 @@
     </div>
     <div class="footer-copy">
       <div><a href="https://github.com/adriwco/projeto-portfolio" target="_blank">Portfólio</a> &copy; Todos os direitos reservados.</div>
-      <div>Adriano Weverton | <a class="link-github" href="https://github.com/adriwco" target="_blank">GitHub <img href="https://github.com/adriwco" src="https://komarev.com/ghpvc/?username=adriwco&color=f8817f" alt="Profile Views" /></a> | <a class="link-mit" href="https://github.com/adriwco/projeto-portfolio/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-f8817f.svg" alt="License MIT"></a></div>
+      <div>Adriano Weverton | <a class="link-github" href="https://github.com/adriwco" target="_blank">GitHub <img href="https://github.com/adriwco" src="https://komarev.com/ghpvc/?username=adriwco&color=f56260" alt="Profile Views" /></a> | <a class="link-mit" href="https://github.com/adriwco/projeto-portfolio/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-f56260.svg" alt="License MIT"></a></div>
     </div>
   </footer>
-  <script>
-
-    let i = 0;
-    const contarAte3 = setInterval(callbackReload, 1000);
-    function callbackReload() {
-      console.log(i++);
-      if (!sessionStorage.getItem('recarregou')) {
-        if (i > 2) {
-          sessionStorage.setItem('recarregou', true);
-          location.reload();
-        }
-      } else {
-        clearInterval(contarAte3);
-        console.log('A página já foi recarregada uma vez.');
-      }
-    }
-    window.addEventListener('beforeunload', function () {
-      sessionStorage.setItem('recarregou', false);
-    });
-
-  </script>
   <script src="./js/plugins/simple-anime.js"></script>
   <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
   <script type="module" src="./js/script.min.js"></script>

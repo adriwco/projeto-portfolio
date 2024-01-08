@@ -38,13 +38,13 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(rgb(211, 129, 127),rgb(245, 98, 96));
+  background: linear-gradient(var(--cor-segunda),var(--cor-primeira));
   position: absolute;
   top: 20px;
   left: -4px;
 }
 .empresa:hover::before{
-  background: linear-gradient(rgb(245, 98, 96),#980bb4);
+  background: linear-gradient(var(--cor-primeira),var(--cor-terceira));
 }
 .empresa-ano{
   position: absolute;
@@ -97,7 +97,7 @@
   color: var(--fonte-cor-2);
 }
 .empresa-links a:hover{
-  color: rgb(211, 129, 127);
+  color: var(--cor-segunda);
 }
 .empresa-links a::before{
   display: block;
@@ -121,7 +121,7 @@
   width: 15px;
 }
 .scroll-projetos::-webkit-scrollbar-thumb{
-  background-color: rgb(245, 98, 96);
+  background-color: var(--cor-primeira);
   border-left: 4px solid var(--fundo-3);
   border-right: 4px solid var(--fundo-3);
 }

@@ -59,12 +59,12 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(rgb(211, 129, 127),rgb(245, 98, 96));
+  background: linear-gradient(var(--cor-segunda),var(--cor-primeira));
   position: absolute;
   left: -24px;
 }
 .faculdade-curso:hover::before{
-  background: linear-gradient(rgb(245, 98, 96),#980bb4);
+  background: linear-gradient(var(--cor-primeira),var(--cor-terceira));
 }
 .faculdade-instituicao{
   font-size: 1.125rem;
@@ -116,7 +116,7 @@
   transition: .3s;
 }
 .cursos a:hover{
-  color: rgb(211, 129, 127);
+  color: var(--cor-segunda);
 }
 .cursos a:hover::before{
   content: '→';
@@ -125,7 +125,7 @@
 }
 .cursando{
   position: relative;
-  color: #f8817f !important;
+  color: var(--cor-segunda) !important;
 }
 .cursando img{
   position: absolute;

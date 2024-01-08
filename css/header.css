@@ -26,12 +26,12 @@
   display: block;
   background: var(--fundo-3);
   border-radius: .3rem;
-  filter: drop-shadow(0px 4px 1px rgb(211, 129, 127));
+  filter: drop-shadow(0px 4px 1px var(--cor-primeira));
   transition: .3s;
 }
 .header-menu a:hover{
-  color: rgb(245, 98, 96);
-  filter: drop-shadow(0px 4px 1px rgb(245, 98, 96));
+  color: var(--cor-primeira);
+  filter: drop-shadow(0px 4px 1px var(--cor-segunda));
 }
 
 .menu-geral{
@@ -49,9 +49,9 @@
 }
 .label {
   background-color: #111;
-  border: 1px solid #D3817F;
+  border: 1px solid var(--cor-segunda);
   transition: .3s;
-  filter: drop-shadow(0px 2px 1px rgb(245, 98, 96));
+  filter: drop-shadow(0px 2px 1px var(--cor-primeira));
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -65,7 +65,7 @@
   transform: scale(1.5);
 }
 .label:hover{
-  filter: drop-shadow(0px 2px 1px rgb(151, 12, 179));
+  filter: drop-shadow(0px 2px 1px var(--cor-terceira));
 }
 .label .ball {
   background-color: #fff;
@@ -114,10 +114,13 @@
   .modo-tela{
     justify-self: end;
     margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   .header-menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 @media (max-width: 350px){

@@ -58,11 +58,11 @@
   margin-top: 16px;
 }
 .footer-informacoes li {
-  box-shadow: 0px 2px 1px rgb(211, 129, 127);
+  box-shadow: 0px 2px 1px var(--cor-segunda);
   display: flex;
 }
 .footer-informacoes li:hover {
-  box-shadow: 0px 3px 1px rgb(245, 98, 96);
+  box-shadow: 0px 3px 1px var(--cor-primeira);
 }
 .footer-informacoes li + li {
   margin-top: 20px;
@@ -84,7 +84,7 @@
   color: #b2b2b2;
 }
 .footer a:hover {
-  color: rgb(245, 98, 96);
+  color: var(--cor-primeira);
 }
 .footer-copy {
   color: #dddddd;
@@ -106,10 +106,11 @@
   top: -45px;
 }
 .footer-copy a{
-  color: rgb(245, 98, 96);
+  color: var(--cor-primeira);
+  font-weight: bold;
 }
 .footer-copy a:hover{
-  color: rgb(236, 61, 58);
+  color: var(--cor-segunda);
 }
 .link-github{
   position: relative;

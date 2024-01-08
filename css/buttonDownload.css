@@ -35,7 +35,7 @@
 .cv-container button {
   background: #1e2021;
   border-radius: 0.3rem;
-  filter: drop-shadow(2px 4px 1px rgb(245, 86, 83));
+  filter: drop-shadow(2px 4px 1px var(--cor-primeira));
   border-radius: 0.5em;
   color: #fff;
   cursor: pointer;

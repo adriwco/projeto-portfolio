@@ -59,11 +59,13 @@
   }
   .introducao h1 {
     font-size: 2rem;
+    margin-top: 30px;
   }
   .introducao h1::before {
-    width: 30px;
+    width: 60px;
     height: 10px;
     left: 0px;
+    top:-25px
   }
 }
 @media (max-width: 500px) {
@@ -218,14 +220,18 @@
   transform: 0.5s;
 }
 .scroll div span:hover {
-  background-color: #4caf50;
+  background-color: var(--cor-segunda);
   cursor: pointer;
 }
 .adriwco {
-  background-color: #ff366f !important;
+  background-color: var(--cor-primeira) !important;
   color: #fff;
 }
-
+@media (max-width: 500px){
+  .container-scroll{
+    display: none;
+  }
+}
 /*
 .teste > div:first-child
 .teste > div:last-child
